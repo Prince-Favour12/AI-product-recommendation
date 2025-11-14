@@ -27,3 +27,6 @@ class Settings(BaseSettings):
     # data path
     DATA_PATH: str = Field(..., env="DATA_PATH")
     EMBEDDING_MODEL_NAME: str = Field(..., env="EMBEDDING_MODEL_NAME")
+
+
+settings = Settings()
